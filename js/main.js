@@ -1,15 +1,6 @@
     var preloader = $('#preloader');
     $(window).on('load', function() {
-     if (window.location.pathname == '/'){
-            waktu();
-            toast();
-         }
-        setTimeout(function() {
-            preloader.fadeOut('slow', function() { $(this).remove(); 
-            });
-        }, 1000)
-    });
-    if (window.location.pathname == '/'){
+        if (window.location.pathname == '/'){
     var ss = document.getElementsByTagName("li")
   for (aa of ss){
     aa.classList.remove("active");
@@ -27,6 +18,15 @@ console.log('OKOK')
   }
   document.getElementById(query.type).classList.add("active");
 }
+     if (window.location.pathname == '/'){
+            waktu();
+            toast();
+         }
+        setTimeout(function() {
+            preloader.fadeOut('slow', function() { $(this).remove(); 
+            });
+        }, 1000)
+    });
 
 $(document).ready(function() {
             $("#cekkeyform").submit(function(e) {
