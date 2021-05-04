@@ -9,20 +9,17 @@
             });
         }, 1000)
     });
-setTimeout(function() {
-console.log('ready')
     if (window.location.pathname == '/'){
     var ss = document.getElementsByTagName("li")
   for (aa of ss){
     aa.classList.remove("active");
   }
   document.getElementById('index').classList.add("active");
-         }   
-    if (window.location.pathname == '/list'){
+   }   
+    if (window.location.pathname == "/list"){
       const query = Qs.parse(location.search, {
   ignoreQueryPrefix: true,
 });
-if (query.type){
   var ss = document.getElementsByTagName("li")
   for (aa of ss){
 console.log('OKOK')
@@ -30,8 +27,6 @@ console.log('OKOK')
   }
   document.getElementById(query.type).classList.add("active");
 }
-    }
-}, 15000)
 
 $(document).ready(function() {
             $("#cekkeyform").submit(function(e) {
