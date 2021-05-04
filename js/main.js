@@ -25,7 +25,6 @@ if (query.type){
   for (aa of ss){
     aa.classList.remove("active");
   }
-  if (!document.getElementById(query.type)) return
   document.getElementById(query.type).classList.add("active");
 }
     }
@@ -46,10 +45,9 @@ if (query.type){
   for (aa of ss){
     aa.classList.remove("active");
   }
-  if (!document.getElementById(query.type)) return
   document.getElementById(query.type).classList.add("active");
 }
-    }
+    };
             $("#cekkeyform").submit(function(e) {
                 $.ajax({
                     url: '//api.zeks.xyz/cekkey?apikey='+apikey.value,
