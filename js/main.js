@@ -10,6 +10,7 @@
         }, 1000)
     });
 $(document).ready(function() {
+console.log('ready')
     if (window.location.pathname == '/'){
     var ss = document.getElementsByTagName("li")
   for (aa of ss){
