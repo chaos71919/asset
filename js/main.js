@@ -1,15 +1,13 @@
     var preloader = $('#preloader');
     $(window).on('load', function() {
-        setTimeout(function() {
-             setTimeout(function() {
-            preloader.fadeOut('slow', function() { $(this).remove();
-           }, 300)
-         if (window.location.pathname == '/'){
+     if (window.location.pathname == '/'){
             waktu();
             toast();
-         }   
+         }
+        setTimeout(function() {
+            preloader.fadeOut('slow', function() { $(this).remove(); 
             });
-        }, 300)
+        }, 600)
     });
     $(window).on('load', function() {
     if (window.location.pathname == '/'){
