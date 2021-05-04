@@ -26,7 +26,6 @@ if (query.type){
   for (aa of ss){
     aa.classList.remove("active");
   }
-  if (!document.getElementById(query.type)) return
   document.getElementById(query.type).classList.add("active");
 }
     }
