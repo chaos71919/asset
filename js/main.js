@@ -9,8 +9,9 @@
             });
         }, 300)
     });
-    $(window).on('load', function() {
-    if (window.location.pathname == '/'){
+
+$(document).ready(function() {
+     if (window.location.pathname == '/'){
     var ss = document.getElementsByTagName("li")
   for (aa of ss){
     aa.classList.remove("active");
@@ -30,9 +31,6 @@ if (query.type){
   document.getElementById(query.type).classList.add("active");
 }
     }
- }); 
-
-$(document).ready(function() {
             $("#cekkeyform").submit(function(e) {
                 $.ajax({
                     url: '//api.zeks.xyz/cekkey?apikey='+apikey.value,
