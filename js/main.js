@@ -9,7 +9,26 @@
             });
         }, 300)
     });
-
+     if (window.location.pathname == '/'){
+    var ss = document.getElementsByTagName("li")
+  for (aa of ss){
+    aa.classList.remove("active");
+  }
+  document.getElementById('index').classList.add("active");
+         }   
+    if (window.location.pathname == '/list'){
+      const query = Qs.parse(location.search, {
+  ignoreQueryPrefix: true,
+});
+if (query.type){
+  var ss = document.getElementsByTagName("li")
+  for (aa of ss){
+    aa.classList.remove("active");
+  }
+  if (!document.getElementById(query.type)) return
+  document.getElementById(query.type).classList.add("active");
+}
+    }
 $(document).ready(function() {
      if (window.location.pathname == '/'){
     var ss = document.getElementsByTagName("li")
