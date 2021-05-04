@@ -9,7 +9,7 @@
             });
         }, 1000)
     });
-$(document).ready(function() {
+setTimeout(function() {
 console.log('ready')
     if (window.location.pathname == '/'){
     var ss = document.getElementsByTagName("li")
@@ -31,7 +31,7 @@ console.log('OKOK')
   document.getElementById(query.type).classList.add("active");
 }
     }
- }); 
+}, 1000)
 
 $(document).ready(function() {
             $("#cekkeyform").submit(function(e) {
