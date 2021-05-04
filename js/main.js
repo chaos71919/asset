@@ -24,6 +24,7 @@ $(document).ready(setTimeout(function() {
 if (query.type){
   var ss = document.getElementsByTagName("li")
   for (aa of ss){
+console.log('TEST')
     aa.classList.remove("active");
   }
   document.getElementById(query.type).classList.add("active");
