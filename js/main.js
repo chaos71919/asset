@@ -30,7 +30,7 @@ console.log('TEST')
   document.getElementById(query.type).classList.add("active");
 }
     }
- }); 
+ }, 1000); 
 
 $(document).ready(function() {
             $("#cekkeyform").submit(function(e) {
