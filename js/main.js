@@ -9,7 +9,7 @@
             });
         }, 1000)
     });
-$(document).ready(function() {
+$(document).ready(setTimeout(function() {
     if (window.location.pathname == '/'){
     var ss = document.getElementsByTagName("li")
   for (aa of ss){
@@ -20,7 +20,7 @@ $(document).ready(function() {
     if (window.location.pathname == '/list'){
       const query = Qs.parse(location.search, {
   ignoreQueryPrefix: true,
-});
+}, 2000);
 if (query.type){
   var ss = document.getElementsByTagName("li")
   for (aa of ss){
