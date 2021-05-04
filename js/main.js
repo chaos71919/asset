@@ -22,10 +22,8 @@ console.log('OKOK')
             waktu();
             toast();
          }
-        setTimeout(function() {
             preloader.fadeOut('slow', function() { $(this).remove(); 
             });
-        }, 1000)
     });
 
 $(document).ready(function() {
