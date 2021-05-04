@@ -1,12 +1,12 @@
     var preloader = $('#preloader');
     $(window).on('load', function() {
         setTimeout(function() {
+             setTimeout(function() {
             preloader.fadeOut('slow', function() { $(this).remove();
+           }, 300)
          if (window.location.pathname == '/'){
-          setTimeout(function() {
             waktu();
             toast();
-           }, 300)
          }   
             });
         }, 300)
