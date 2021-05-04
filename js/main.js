@@ -7,7 +7,7 @@
         setTimeout(function() {
             preloader.fadeOut('slow', function() { $(this).remove(); 
             });
-        }, 600)
+        }, 1000)
     });
     $(window).on('load', function() {
     if (window.location.pathname == '/'){
