@@ -9,7 +9,7 @@
             });
         }, 1000)
     });
-    $(window).on('load', function() {
+$(document).ready(function() {
     if (window.location.pathname == '/'){
     var ss = document.getElementsByTagName("li")
   for (aa of ss){
