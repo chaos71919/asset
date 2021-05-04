@@ -3,8 +3,10 @@
         setTimeout(function() {
             preloader.fadeOut('slow', function() { $(this).remove();
          if (window.location.pathname == '/'){
+          setTimeout(function() {
             waktu();
             toast();
+           }, 300)
          }   
             });
         }, 300)
