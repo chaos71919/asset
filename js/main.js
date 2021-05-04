@@ -1,33 +1,36 @@
-  
     var preloader = $('#preloader');
     $(window).on('load', function() {
-        if (window.location.pathname == '/'){
+        setTimeout(function() {
+            preloader.fadeOut('slow', function() { $(this).remove();
+         if (window.location.pathname == '/'){
+            waktu();
+            toast();
+         }   
+            });
+        }, 300)
+    });
+    $(window).on('load', function() {
+    if (window.location.pathname == '/'){
     var ss = document.getElementsByTagName("li")
   for (aa of ss){
     aa.classList.remove("active");
   }
   document.getElementById('index').classList.add("active");
-   }   
-    if (window.location.pathname == "/list"){
+         }   
+    if (window.location.pathname == '/list'){
       const query = Qs.parse(location.search, {
   ignoreQueryPrefix: true,
 });
+if (query.type){
   var ss = document.getElementsByTagName("li")
   for (aa of ss){
-console.log('OKOK')
     aa.classList.remove("active");
   }
+  if (!document.getElementById(query.type)) return
   document.getElementById(query.type).classList.add("active");
 }
-     if (window.location.pathname == '/'){
-            waktu();
-            toast();
-         }
-        setTimeout(function() {
-            preloader.fadeOut('slow', function() { $(this).remove(); 
-            });
-        }, 1000)
-    });
+    }
+ }); 
 
 $(document).ready(function() {
             $("#cekkeyform").submit(function(e) {
